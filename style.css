@@ -1,8 +1,213 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: hsl(0, 0%, 98%);
+        Font-size: 15px;
+    }
+    
+    .container {
+        background-color: hsl(0, 0%, 98%);
+        line-height: 1.0;
+        display: grid;
+        justify-items: center;
+    }
+    /*Heading Section*/
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .text-container {
+        margin: 0 auto;
+        max-width: 21rem;
+        padding: 5rem 1.2rem 1rem;
+        line-height: 1.6;
+    }
+    
+    .heading {
+        font-weight: 200;
+        color: hsl(234, 12%, 34%);
+    }
+    
+    .heading-2 {
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+    }
+    
+    .sub-heading {
+        margin-top: 0.8rem;
+        color: hsl(236, 7%, 50%);
+        font-size: 15px;
+        font-weight: 400;
+    }
+    /*Card Section*/
+    
+    .card-container {
+        margin-top: 3.5rem;
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(12.5rem, auto);
+        grid-gap: 2rem;
+        justify-items: center;
+    }
+    
+    .card {
+        max-width: 21rem;
+        padding: 2rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+    }
+    
+    .card-1 {
+        border-top: 3px solid hsl(180, 62%, 55%);
+    }
+    
+    .card-2 {
+        border-top: 3px solid hsl(0, 78%, 62%);
+    }
+    
+    .card-3 {
+        border-top: 3px solid hsl(34, 97%, 64%);
+    }
+    
+    .card-4 {
+        border-top: 3px solid hsl(212, 86%, 64%);
+    }
+    
+    .card-heading {
+        color: hsl(234, 12%, 34%);
+        font-weight: 600;
+    }
+    
+    .card-content {
+        padding-top: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+        color: hsl(234, 12%, 34%);
+        font-weight: 400;
+    }
+    
+    .card-img {
+        margin-top: 1.5rem;
+        /*background-color: hsl(234, 12%, 34%);*/
+        padding-top: 1.5rem;
+        padding-left: 13rem;
+    }
+    
+    img {
+        width: 3.8rem;
+    }
+    /*Footer*/
+    
+    .attribution {
+        margin-top: 3rem;
+        font-size: 11px;
+        text-align: center;
+        color: hsl(234, 12%, 34%);
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    /*Media Queries*/
+    
+    @media only screen and (min-width: 768px) {
+        .text-container {
+            max-width: 30rem;
+            margin: 0 auto;
+            padding: 5rem 1.2rem 1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .card-container {
+            margin-top: 3.3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(8rem, auto);
+            grid-column-gap: 2rem;
+            grid-row-gap: 2.5rem;
+            justify-items: center;
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        h1 {
+            font-size: 2rem;
+        }
+        .text-container {
+            max-width: 32rem;
+            margin: 0 auto;
+            padding: 5rem 1.2rem 1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .card-container {
+            margin-top: 3.3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'a b d' 'a c d';
+            grid-gap: 2rem;
+        }
+        .card-1 {
+            grid-area: a;
+        }
+        .card-2 {
+            grid-area: b;
+        }
+        .card-3 {
+            grid-area: c;
+        }
+        .card-4 {
+            grid-area: d;
+        }
+        .card-1,
+        .card-4 {
+            align-self: center;
+        }
+        img {
+            width: 4rem;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        h1 {
+            font-size: 2.2rem;
+        }
+        .text-container {
+            max-width: 34rem;
+            margin: 0 auto;
+            padding: 5rem 1.5rem 1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .card-container {
+            margin-top: 3.3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'a b d' 'a c d';
+            grid-gap: 2rem;
+            max-width: 77rem;
+        }
+        .card {
+            max-width: 23rem;
+            padding: 1.9rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        .card-img {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            padding-left: 15.1rem;
+        }
+        img {
+            width: 4.2rem;
+        }
+    }
