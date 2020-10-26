@@ -98,7 +98,7 @@
         margin-top: 1.5rem;
         /*background-color: hsl(234, 12%, 34%);*/
         padding-top: 1.5rem;
-        padding-left: 13rem;
+        text-align: right;
     }
     
     img {
@@ -216,7 +216,7 @@
         .card-img {
             margin-top: 1.5rem;
             padding-top: 1.5rem;
-            padding-left: 15.1rem;
+            text-align: right;
         }
         img {
             width: 4.2rem;
